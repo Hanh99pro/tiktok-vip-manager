@@ -1,0 +1,8 @@
+*_token.txt
+accounts.json
+*.zip
+ngrok*.exe
+ngrok-v3-stable-windows-amd64/
+folders/*/uploaded/
+__pycache__/
+*.pyc
