@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f3f6fb;
+  color: #0f172a;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 0;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #4f6b93;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dbe4f0;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin: 18px 0 8px;
+}
+
+select,
+input {
+  width: 100%;
+  border: 1px solid #d6dfeb;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+small {
+  color: #64748b;
+  display: block;
+  margin-top: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.switch-row {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.pill {
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.pill.on {
+  color: white;
+  background: #0f172a;
+}
+
+.btn {
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 22px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn.primary,
+.btn.full {
+  background: #0f172a;
+  color: white;
+}
+
+.btn.ghost {
+  background: white;
+  color: #0f172a;
+  border: 1px solid #d6dfeb;
+}
+
+.btn.full {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stat {
+  border-radius: 18px;
+  background: #f8fafc;
+  padding: 22px;
+}
+
+.stat .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.stat b {
+  display: block;
+  font-size: 34px;
+}
+
+.stat span {
+  color: #4f6b93;
+}
+
+pre {
+  background: #020617;
+  color: #86efac;
+  border-radius: 18px;
+  padding: 20px;
+  min-height: 180px;
+  overflow: auto;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .header,
+  .grid,
+  .stats {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .header-actions {
+    margin-top: 18px;
+  }
+
+  .stat {
+    margin-bottom: 14px;
+  }
+}

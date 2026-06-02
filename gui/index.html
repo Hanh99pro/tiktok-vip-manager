@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TikTok VIP Manager</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>TikTok VIP Manager</h1>
+        <p>Random video → Upload Draft → Telegram → Y/N → Uploaded</p>
+      </div>
+      <div class="header-actions">
+        <button class="btn primary" onclick="startBot()">▶ Start</button>
+        <button class="btn ghost" onclick="stopBot()">⏸ Stop</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Thêm cấu hình</h2>
+    <button class="btn ghost" onclick="addTikTokAccount()">+ Thêm tài khoản TikTok</button>
+      <label>Chọn nick TikTok</label>
+      <select id="account">
+        
+        <option value="">Chọn nick</option>
+      </select>
+      <button onclick="deleteSelectedAccount()" class="danger-btn">
+        🗑 Xóa tài khoản đang chọn
+      </button>
+
+      <label>Folder chủ đề</label>
+      <select id="topic" onchange="loadStats()">
+        <option value="">Chọn folder</option>
+      </select>
+
+      <div class="grid">
+        <div>
+          <label>Giờ bắt đầu</label>
+          <!-- <input id="startTime" value="Chạy ngay" disabled /> -->
+        <select id="runMode" onchange="toggleStartTime()">
+            <option value="now">Chạy ngay</option>
+            <option value="schedule">Hẹn giờ</option>
+        </select>
+
+        <input
+            id="startTime"
+            placeholder="VD: 08:30"
+            style="display:none;margin-top:10px;"
+
+        />
+        </div>
+        <div>
+          <label>Khoảng cách</label>
+          <input id="wait" value="300" />
+          <small>Đơn vị: giây. 300 = 5 phút, 1800 = 30 phút.</small>
+        </div>
+      </div>
+
+      <div class="switch-row">
+        <span>Random không lặp</span>
+        <span class="pill on">ON</span>
+      </div>
+
+      <div class="switch-row">
+        <span>Telegram Y/N</span>
+        <span class="pill on">ON</span>
+      </div>
+
+      <button class="btn full" onclick="startBot()">+ Chạy cấu hình này</button>
+    </section>
+
+    <section class="card">
+      <h2>Thống kê folder</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="icon">☁️</div>
+          <b id="videosCount">0</b>
+          <span>Video chưa upload</span>
+        </div>
+        <div class="stat">
+          <div class="icon">⏳</div>
+          <b id="pendingCount">0</b>
+          <span>Đang pending</span>
+        </div>
+        <div class="stat">
+          <div class="icon">✅</div>
+          <b id="uploadedCount">0</b>
+          <span>Đã uploaded</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Log hoạt động</h2>
+      <pre id="log">Sẵn sàng...</pre>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
