@@ -38,10 +38,10 @@ ACCOUNTS = {
     "2": "thamvongnhungluoibieng9x",
     "3": "lammyjqjco2",
 }
-# CLIENT_KEY = "sbawbx46zmog615y0k"
-# CLIENT_SECRET = "iLN92eRoJosLXH22ac97vQSxF2xvoQ0g"
-CLIENT_KEY = "aw4wh43nndnvqdab"
-CLIENT_SECRET = "UYLmisRtQj5Qm9e9nM2dIT5aCy0p1d8a"
+CLIENT_KEY = "sbawbx46zmog615y0k"
+CLIENT_SECRET = "iLN92eRoJosLXH22ac97vQSxF2xvoQ0g"
+# CLIENT_KEY = "aw4wh43nndnvqdab"
+# CLIENT_SECRET = "UYLmisRtQj5Qm9e9nM2dIT5aCy0p1d8a"
 # REDIRECT_URI = "http://127.0.0.1:5000/callback"
 # REDIRECT_URI = "https://example.com/callback"
 # REDIRECT_URI = "https://written-dingy-zen.ngrok-free.dev/callback"
