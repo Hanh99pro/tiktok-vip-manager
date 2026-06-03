@@ -376,9 +376,6 @@ def stats():
 
 @app.route("/tiktokBI9SEdpBUc9JELHj5ICi79UnelrjIBS.txt")
 def tiktok_verify_file():
-    return send_from_directory(
-        APP_DIR,
-        "tiktokBI9SEdpBUc9JELHj5ICi79UnelrjIBS.txt"
-    )
+    return "tiktok-developers-site-verification=BI9SEdpBUc9JELHj5ICi79UneIrqjIBS"
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=False)
