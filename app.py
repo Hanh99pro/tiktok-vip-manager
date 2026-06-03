@@ -374,6 +374,8 @@ def stats():
         "uploaded": count_mp4("uploaded"),
     })
 
-
+@app.route("/tiktokBI9SEdpBUc9JELHj5ICi79UnelrjIBS.txt")
+def tiktok_verify_file():
+    return "tiktok-developers-site-verification=BI9SEdpBUc9JELHj5ICi79UneIrqjIBS"
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=False)
