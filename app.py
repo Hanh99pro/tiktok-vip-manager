@@ -380,10 +380,17 @@ def stats():
 
 @app.route("/tiktokBI9SEdpBUc9JELHj5ICi79UnelrjIBS.txt")
 @app.route("/tiktokBI9SEdpBUc9JELHj5ICi79UneIrqjIBS.txt")
-def tiktok_verify_file():
-    return "tiktok-developers-site-verification=BI9SEdpBUc9JELHj5ICi79UneIrqjIBS"
+# def tiktok_verify_file():
+#     return "tiktok-developers-site-verification=BI9SEdpBUc9JELHj5ICi79UneIrqjIBS"
 # if __name__ == "__main__":
 #     app.run(host="127.0.0.1", port=5000, debug=False)
+@app.route("/tiktokQCfzwd5uFaeURUEniL5CNjbC8mxCr0Oy.txt")
+def tiktok_verify():
+    return (
+        "tiktok-developers-site-verification=QCfzwd5uFaeURUEniL5CNjbC8mxCr0Oy",
+        200,
+        {"Content-Type": "text/plain"}
+    )
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
