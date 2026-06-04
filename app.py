@@ -45,8 +45,9 @@ CLIENT_SECRET = "iLN92eRoJosLXH22ac97vQSxF2xvoQ0g"
 # REDIRECT_URI = "http://127.0.0.1:5000/callback"
 # REDIRECT_URI = "https://example.com/callback"
 # REDIRECT_URI = "https://written-dingy-zen.ngrok-free.dev/callback"
-REDIRECT_URI = "https://tiktok-vip-manager.onrender.com/callback"
+# REDIRECT_URI = "https://tiktok-vip-manager.onrender.com/callback"
 # REDIRECT_URI = "http://localhost:5000/callback"
+REDIRECT_URI = "https://vip-manager-online.onrender.com/callback"
 SCOPES = "user.info.basic,video.upload"
 
 def generate_pkce():
