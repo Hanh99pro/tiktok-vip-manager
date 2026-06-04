@@ -384,10 +384,10 @@ def stats():
 #     return "tiktok-developers-site-verification=BI9SEdpBUc9JELHj5ICi79UneIrqjIBS"
 # if __name__ == "__main__":
 #     app.run(host="127.0.0.1", port=5000, debug=False)
-@app.route("/tiktok9ES5xxeuLmbMX20CzYlOXU9J1XSBpzkU.txt")
+@app.route("/tiktokRAVyV5vq0KPw6F5fQf0uglR8zJWJPgWJ.txt")
 def tiktok_verify():
     return (
-        "tiktok-developers-site-verification=9ES5xxeuLmbMX20CzYlOXU9J1XSBpzkU",
+        "tiktok-developers-site-verification=RAVyV5vq0KPw6F5fQf0uglR8zJWJPgWJ",
         200,
         {"Content-Type": "text/plain"}
     )
